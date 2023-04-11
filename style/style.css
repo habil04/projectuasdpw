@@ -1,0 +1,390 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body {
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+
+:root {
+    --darken-blue: #1a2c43;
+    --dark-blue: #073c64;
+    --orange: rgb(255, 181, 44);
+}
+
+.hidden {
+    display: none !important;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+ul li {
+    list-style: none;
+}
+
+.form-control::-webkit-input-placeholder {
+    color: rgb(29, 29, 29);
+}
+
+.header {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.header .nav-item a {
+    color: white;
+}
+
+.header .banner-kontainer {
+    top: 0;
+}
+
+.banner-kontainer img {
+    width: 66px;
+}
+
+.navbar-top {
+    transition: all .5s ease-in-out;
+}
+
+.navbar-top-mobile {
+    display: none;
+    height: 0;
+    padding: 0;
+}
+
+.navbar-top li a {
+    color: white;
+}
+
+.navbar-top-mobile li.nav-item a {
+    color: black;
+}
+
+.navbar-btm {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.navbar-btm-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.navbar-btm-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-transform: uppercase;
+}
+
+.navbar-btm-menu ul li a.active::after {
+    content: "";
+    top: 5px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.header .nav-item a:hover::after {
+    content: "";
+    top: 5px;
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+}
+
+.navbar-btm-menu form {
+    padding: 0;
+}
+
+.toggle {
+    display: none;
+}
+
+main.home {
+    margin-top: 115px;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
+    gap: 20px;
+}
+
+.btn-container {
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.btn-container .btn {
+    padding: 10px 20px;
+    background-color: orange;
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.btn-container .btn.misi {
+    background-color: var(--dark-blue);
+    color: #ffffff;
+}
+
+.content-container {
+    border: 2px solid rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px;
+    width: 100%;
+}
+
+h2.section-title {
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px;
+    white-space: nowrap;
+    color: var(--darken-blue);
+    display: block;
+}
+
+h2.section-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    top: 23px;
+    background-color: var(--orange);
+}
+
+.berita-container, .event-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.berita, .event {
+    display: flex;
+    gap: 20px;
+}
+
+.berita img, .event img {
+    width: 150px;
+}
+
+.berita h3, .event h3 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.berita p, .event p {
+    opacity: .5;
+}
+
+a.read-more {
+    font-size: 1rem;
+    font-weight: bold;
+    color: var(--dark-blue);
+    letter-spacing: 1px;
+}
+
+a.read-more::after {
+    content: "";
+    width: 180px;
+    height: 4px;
+    display: block;
+    background-color: var(--dark-blue);
+}
+
+.kemitraan-container {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-content: space-between;
+}
+
+.kemitraan-container img {
+    width: 70px;
+    opacity: .7;
+}
+
+.footer {
+    background-color: var(--darken-blue);
+}
+
+.footer-body p {
+    font-size: 14px;
+}
+
+.footer-body h4 {
+    color: orange;
+}
+
+.toggle {
+    display: none;
+}
+
+@media screen and (max-width: 992px){
+    .banner-kontainer img {
+        width: 40px;
+    }
+
+    .banner-kontainer p {
+        font-size: .8rem;
+        font-weight: 500;
+    }
+
+    .navbar-top {
+        display: none;
+        height: 0;
+        visibility: hidden;
+        padding: 0;
+    }
+
+    .navbar-top-mobile {
+        display: block;
+    }
+
+    .navbar-top-mobile .kontainer {
+        flex-direction: column;
+    }
+
+    .navbar-top-mobile li a {
+        color: black;
+    }
+
+    .navbar-top-mobile .navbar-top-menu {
+        display: flex;
+        right: 20px;
+        justify-content: end;
+    }
+
+    .navbar-top-mobile .navbar-top-menu ul{
+        width: max-content;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        color: black;
+        position: relative;
+        z-index: 10;
+        top: 50px;
+        right: 20px;
+        padding: 20px;
+        margin: 0;
+    }
+
+    .navbar-btm {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5rem;
+    }
+
+    .navbar-btm .banner-kontainer {
+        align-self: flex-start;
+    }
+
+    .navbar-btm-menu {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .toggle {
+        align-self: flex-end;
+        display: flex;
+        gap: 10px;
+    }
+
+    .navbar-btm-menu ul {
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: stretch;
+    }
+
+    .navbar-btm-menu form {
+        padding: 0;
+    }
+
+    .content {
+        display: grid;
+        grid-template-columns: 1fr;
+        width: 100%;
+        gap: 20px;
+    }
+
+    main.home {
+        margin-top: 55px;
+    }
+
+    .hightlight-news .ket {
+        display: none;
+    }
+
+    .content a.read-more {
+        display: none;
+    }
+
+    .news-container {
+        gap: 30px;
+    }
+
+    .news {
+        display: flex;
+        width: 100%;
+    }
+
+    .news p.title {
+        width: 100%;
+    }
+
+    .news img {
+        max-width: 150px;
+    }
+
+    .kemitraan-container {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    
+    .kemitraan-container img {
+        width: clamp(50px, 100px, 10vw);
+    }
+
+    .footer-body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        text-align: center;
+        gap: 50px;
+    }
+
+    .menu-footer-laman > a::after {
+        display: none;
+    }
+
+    .footer-body .social {
+        align-self: center;
+    }
+}
