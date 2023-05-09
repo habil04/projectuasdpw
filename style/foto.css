@@ -1,0 +1,33 @@
+.heros-container {
+    margin-top: 110px;
+    margin-bottom: 20px;
+}
+
+.akreditasi, .mikrotik {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 50px;
+}
+
+.img-cont {
+    width: 100%;
+}
+
+.img-cont img {
+    width: 100%;
+}
+
+@media screen and (max-width: 992px){ 
+    .foto-container {
+        margin-top: 100px;
+    }
+    .galeri {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+}

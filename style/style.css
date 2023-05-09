@@ -155,6 +155,32 @@ main.home {
     width: 100%;
 }
 
+.heros-container {
+    width: 100vw;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    text-align: center;
+}
+
+.alamat h2, .email h2 {
+    color: orange;
+}
+
+.heros-container img {
+    width: 100%;
+}
+
+.heros-container p {
+    width: 100%;
+    position: absolute;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #ffffff;
+    text-shadow: 0 0 5px #000000, 0 0 5px #000000;
+}
+
 h2.section-title {
     height: 50px;
     line-height: 50px;
@@ -165,7 +191,6 @@ h2.section-title {
     gap: 10px;
     white-space: nowrap;
     color: var(--darken-blue);
-    display: block;
 }
 
 h2.section-title::after {
@@ -174,7 +199,7 @@ h2.section-title::after {
     width: 100%;
     height: 3px;
     top: 23px;
-    background-color: var(--orange);
+    background-color: orange;
 }
 
 .berita-container, .event-container {
@@ -323,13 +348,6 @@ a.read-more::after {
 
     .navbar-btm-menu form {
         padding: 0;
-    }
-
-    .content {
-        display: grid;
-        grid-template-columns: 1fr;
-        width: 100%;
-        gap: 20px;
     }
 
     main.home {
