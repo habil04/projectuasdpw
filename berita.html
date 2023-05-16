@@ -12,162 +12,90 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
     <title>Berita</title>
 </head>
 <body>
-    <div class="header position-fixed top-0 z-3 vw-100">
-        <div style="background-color: #1a2c43;">
-            <nav class="navbar-top container" style="background-color: #1a2c43;">
-                <div class="navbar-top-menu w-100" id="navbarTop">
-                    <ul class="d-flex mb-0 align-items-center justify-content-end gap-4 py-2">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#" style="font-size: .8rem;">Universitas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: .8rem;" href="#">Fakultas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: .8rem;" href="#">Jurusan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: .8rem;" href="#">Unduh Brosur</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: .8rem;" href="#">Pendaftaran</a>
-                        </li>
-                    </ul>
+    <div id="header"></div>
+    <div class="video-container container">
+        <h2 class="section-title fw-bold my-5" style="margin-top: 150px !important;">BERITA</h2>
+        <div class="row row-gap-5 mb-5">
+            <div class="col-lg-6 col-12">
+                <div>
+                    <img src="./assets/image/berita3.jpg" alt="" class="w-100">
+                    <p class="my-3 fs-5 fw-bolder">Orientasi Program FGA DTS 2022</p>
+                    <p>Dzikri Armansyah, mahasiswa Teknik Informatika UNRI menjadi juara dalam ajang kompetisi Bujang Dara Kabupaten Kampar. Bersama dengan pasangannya Nur Winda yang merupakan Putri asal Kecamatan Bangkinang Kota menjadi Bujang Dara Kabupaten Kampar tahun 2019. Kedua pasangan ini resmi terpilih jadi juara di acara Malam Puncak Bujang Dara Kabupaten Kampar yang diadakan di aula Kantor Bupati Kampar, Minggu...</p>
+                    <p>13 Juli 2022</p>
+                    <a href="" class="py-2 px-4 rounded-2 text-light" style="background-color: #1a2c43;">Selengkapnya</a>
                 </div>
-            </nav>
-            <nav class="navbar-top-mobile container" style="background-color: #1a2c43;">
-                <div class="navbar-top-menu w-100" id="navbarTop">
-                    <ul class="d-flex mb-0 gap-4 py-2 rounded-2">
-                        <li class="nav-item">
-                            <a class="nav-link" aria-current="page" href="#" style="font-size: .8rem;">Universitas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: .8rem;" href="#">Fakultas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: .8rem;" href="#">Jurusan</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: .8rem;" href="#">Undih Brosur</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" style="font-size: .8rem;" href="#">Pendaftaran</a>
-                        </li>
-                    </ul>
+                <div class="my-5">
+                    <img src="./assets/image/berita6.jpg" alt="" class="w-100">
+                    <p class="my-3 fs-5 fw-bolder">Orientasi Program FGA DTS 2022</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla, enim dolor odit, quae ut eum optio maxime iure velit, praesentium rerum. Assumenda vitae, autem officiis optio dignissimos est totam deleniti facere sint amet labore magni ducimus rem ut? Ullam distinctio velit quaerat nostrum atque voluptatibus sapiente doloribus? Tempora, labore consequuntur.</p>
+                    <p>13 Juli 2022</p>
+                    <a href="" class="py-2 px-4 rounded-2 text-light" style="background-color: #1a2c43;">Selengkapnya</a>
                 </div>
-            </nav>
-        </div>
-        <div style="background-color: #073c64;">
-            <nav class="container py-2" style="background-color: #073c64;">
-                <div class="container-fluid navbar-btm">
-                    <div
-                        class="d-flex gap-lg-3 gap-2 align-items-center justify-content-center px-lg-3 px-2 z-2 banner-kontainer">
-                        <img src="./assets/logo.png" />
-                        <p class="text-light my-auto" style="white-space: nowrap;">Teknik Informatika <br /> <span>Universitas Riau</span>
-                        </p>
-                    </div>
-                    <div class="navbar-btm-menu py-2" id="navbar-btm">
-                        <ul class="mb-2 gap-3 mb-lg-0">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page"
-                                    href="#">Beranda</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Profil</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Akademik</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Sertifikasi</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Galeri</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Kontak</a>
-                            </li>
-                            <form>
-                                <input class="form-control ms-lg-3 text-dark" type="search" placeholder="Search"
-                                    aria-label="Search"
-                                    style="border-radius: 10px; background-color: #ffffff; outline: none; border: none;" />
-                            </form>
-                        </ul>
-                    </div>
-                    <div class="toggle position-absolute gap-4 py-2">
-                        <div class="btm-menu-toggler" type="button" aria-label="Toggle navigation">
-                            <i class="fas fa-bars fs-5 text-light"></i>
+                <div>
+                    <img src="./assets/image/berita1.jpg" alt="" class="w-100">
+                    <p class="my-3 fs-5 fw-bolder">Orientasi Program FGA DTS 2022</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, cum ipsa. Repellat inventore, cum sunt incidunt voluptate adipisci, voluptas accusantium facilis quia rerum reprehenderit ad, et tempora quas odio nesciunt maxime numquam hic dignissimos laudantium! Nostrum odio, necessitatibus quasi quo voluptatibus dolorem officiis porro reprehenderit sit ipsum, perspiciatis illo hic.</p>
+                    <p>13 Juli 2022</p>
+                    <a href="" class="py-2 px-4 rounded-2 text-light" style="background-color: #1a2c43;">Selengkapnya</a>
+                </div>
+            </div>
+            <div class="col-lg-6 p-3 col-12">
+                <div class="berita-container m-0">
+                    <h2 class="section-title fw-bold">BERITA</h2>
+                    <div class="berita">
+                        <img src="./assets/image/berita3.jpg" alt="">
+                        <div class="desc">
+                            <h3>Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan</h3>
+                            <p class="date">1 JULI 2022</p>
                         </div>
-                        <div class="top-menu-toggler text-center px-0" type="button" aria-label="Toggle navigation">
-                            <i class="fas fa-ellipsis-v fs-5 text-light"></i>
+                    </div>
+                    <div class="berita">
+                        <img src="./assets/image/berita5.jpg" alt="">
+                        <div class="desc">
+                            <h3>Prof Azriyenni Guru Besar Teknik Elektro Pertama di Riau</h3>
+                            <p class="date">12 SEPTEMBER 2022</p>
                         </div>
                     </div>
                 </div>
-            </nav>
+                <div class="event-container">
+                    <h2 class="section-title fw-bold mt-4">EVENT</h2>
+                    <div class="event">
+                        <img src="./assets/image/berita3.jpg" alt="">
+                        <div class="desc">
+                            <h3>[EVENT] Orientasi Program FGA DTS 2022</h3>
+                            <p class="date">12 JANUARI 2022</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <img src="./assets/image/berita2.jpg" alt="">
+                        <div class="desc">
+                            <h3>[EVENT] KULIAH UMUM : Data Analytics for Health Sector</h3>
+                            <p class="date">20 MEI 2022</p>
+                        </div>
+                    </div>
+                    <div class="event">
+                        <img src="./assets/image/berita4.jpg" alt="">
+                        <div class="desc">
+                            <h3>[EVENT] WEBINAR : How to Create Project/Research Poster</h3>
+                            <p class="date">2 JUNI 2022</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <main class="berita-container container">
-        <div class="pe-xl-2">
-            <h2>Ani Mardhatillah, mahasiswa Teknik Informatika Juara 1 Lomba MTQ Kecamatan</h2>
-            <div class="ket d-flex gap-5">
-                <p>15 Maret 2023</p>
-                <p>Oleh Dian Ramadhani</p>
-            </div>
-            <img src="./assets/image/hightlight-news.jpg" style="width: 100%;" alt="">
-            <p class="fs-5 mt-4">Ani Mardhatillah, mahasiswa Teknik Informatika UNRI menjadi juara 1 pada lomba Musabaqah Tilawatil Quran (MTQ)  ke IV Tingkat Kecamatann Bathin Solapan, Kabupaten Bengkalis. Acara ini diselenggarakan mulai tanggal 16-23 September 2022 di Kantor Camat Bathin Solapan.</p>
-            <p class="fs-5">Ketua Prodi Teknik Informatika,  Dr. Feri Candra turut  mengapresiasi perolehan ini “Capaian ini sangat positif, dari Prodi mendukung berbagai bentuk prestasi Mahasiswa baik dibidang akademis maupun non akademis”.</p>
-            <img src="./assets/image/Ani-Mardhatillah-Juara-1-MTQ--300x200.jpg" class="my-3" alt="">
-            <p class="fs-5">Ani Mardhatillah meraih Juara 1 pada Cabang Tilawah Al Quran Golongan Remaja Putri. Selanjutnya, Ani akan mewakili kecamatan Bathin Solapan pada MTQ Kab. Bengkalis ke 47 yang rencana nya akan diselenggarakan pada tanggal 14 November 2022 di Kecamatan Bukit Batu, Kabupaten Bengkalis.  Selamat dan semangat menorehkan prestasi.</p>
-        </div>
-        <!-- <div class="berita-terkait w-25 ps-lg-2">
-            <h4>Berita Terkait</h4>
-            <div class="col">
-                <h6>[EVENT] Orientasi Program FGA DTS 2022</h6>
-                <p>15 Maret 2023</p>
-            </div>
-            <div class="col">
-                <h6>[EVENT] Orientasi Program FGA DTS 2022</h6>
-                <p>15 Maret 2023</p>
-            </div>
-            <div class="col">
-                <h6>[EVENT] Orientasi Program FGA DTS 2022</h6>
-                <p>15 Maret 2023</p>
-            </div>
-        </div> -->
-    </main>
-    <footer class="footer" style="color: white;">
-        <div class="footer-body p-5 container d-flex justify-content-between mx-auto w-100 flex-wrap">
-            <div class="section-box">
-                <h5 class="mt-1 mb-3 fw-semibold">Teknik Informatika <br /> <span class="fs-6 fw-medium">Universitas Riau</span></h5>
-                <h4>ADDRESS</h4>
-                <P>
-                    Kampus Binawidya <br />
-                    JL. HR Soebrantas KM 12.5 <br />
-                    Simpang Baru, Binawidya <br />
-                    Pekanbaru - 28293
-                </P>
-                <h4>EMAIL</h4>
-                <P>
-                    informatika@eng.unri.ac.id
-                </P>
-            </div>
-            <div class="section-box">
-                <h4 class="fw-semibold text-center mb-4">KEMITRAAN</h4>
-                <div class="kemitraan-container d-grid w-100">
-                    <img src="./assets/image/logo-bps-1.jpg" alt="logo bps"/>
-                    <img src="./assets/image/logo-cisco.jpg" alt="logo cisco"/>
-                    <img src="./assets/image/logo-esri-1.jpg" alt="logo esri"/>
-                    <img src="./assets/image/logo-kemenkominfo.jpg" alt="logo kominfo"/>
-                    <img src="./assets/image/logo-mikrotik.jpg" alt="logo mikrotik"/>
-                    <img src="./assets/image/logo-microsoft.jpg" alt="logo microsoft"/>
-                    <img src="./assets/image/logo-oracle.jpg" alt="logo oracle"/>
-                    <img src="./assets/image/logo-redhat-1.jpg" alt="logo redhat"/>
-                </div>
-            </div>
-    </footer>
+    <div id="footer"></div>
     <script src="./script/js/bootstrap.bundle.min.js"></script>
     <script src="./script/script.js"></script>
 </body>

@@ -119,6 +119,20 @@ ul li {
     display: none;
 }
 
+ul.drop-container {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+ul.drop-container li a {
+    color: rgb(31, 31, 31) !important;
+}
+
+.navbar-btm-menu li.nav-item ul {
+    width: max-content;
+}
+
 main.home {
     margin-top: 115px;
 }

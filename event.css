@@ -1,0 +1,327 @@
+@media (max-width:720px) {
+    *{
+        font-size: 13px;
+    }
+    .kontengambar{
+        padding: 20px;
+        padding-bottom: 0px;
+    }
+    .kontenjudul{
+        text-align: center;
+    }
+    .logo{
+        width: 100px;
+        padding-left: 0px;
+    }
+    .kontenteks{
+        padding: 20px;
+    }
+    .beritajudul{
+        padding-left: 20px;
+    }
+
+    .kegiatan{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        padding-top: 5px;
+        gap: 20px;
+    }
+    .gambarko{
+        width: 250px;
+        align-self: center;
+    }
+    .Event{
+        display: flex;
+        flex-direction: column;
+    }
+    .bgheader.atas{
+        background-color: #243238;
+        height: 15px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 20;
+    }
+
+    .navbar.piring {
+        position: fixed;
+        width: 100%;
+        height: max-content;
+        z-index: 20;
+        top: 15px;
+    }
+
+    .bgheader.bawah{
+        background-color: #243238;
+        height: 15px;
+        position: fixed;
+        top: 55px;
+        width: 100%;
+        z-index: 20;
+    }
+
+    #myCarousel{
+        margin-top: 70px;
+    }
+
+    .bgheader ul li{
+        display: none;
+    }
+    .footer{
+        padding: 20px;
+
+    }
+    .mitra{
+        display: grid;  
+        justify-items: center;   
+        grid-template-columns: repeat(2,1fr);
+        padding: 20px;
+    }
+
+    .kemitraan{
+        padding-top: 20px;
+        padding-left: 20px;    
+    }
+    .bukanheading{
+        color: grey;
+        font-size: 15px;
+        margin-left: 25px;
+    }
+    .batas{
+        margin-left: 25px;
+    }
+    .mobile ul{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .mobile ul li{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 10px;
+        list-style: none;
+
+    }
+    .mobile ul li a{
+        color: black;
+        text-decoration: none;
+    }
+    .mobile ul li img{
+        width: 15px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hedtop {
+        position: fixed;
+        top: 60px;
+        right: 20px;
+        background-color: #f1f1f1;
+        z-index: 100;
+        padding: 10px 30px;
+        transition: all .5s ease-in-out;
+    }
+
+    .garis{
+        background-color: black;
+        height: 3px;
+        width: 370px;
+    }
+    .scroll{
+        display: block;
+        z-index: 10000;
+        position: static;
+        right: 30px;
+        bottom: 30px;
+    }
+    .topcoy{
+        width: 40px;
+        height: 40px;
+    }
+    .fotok{
+        width: 50px;
+    }
+    .bargaleri{
+        padding-left: 25px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width:100vw) and (min-width:721px) {
+    /* bg header */
+    .bgheader{
+        background-color: #243238;
+        height: 30px;
+    }
+    .mobile{
+        display: none;
+    }
+    .bgheader ul{
+        display: flex;
+        justify-content: end;
+        padding-right: 50px;
+    }
+    .bgheader ul li{
+        list-style: none;
+    }
+    .bgheader ul li a{
+        color: white;
+        text-decoration: none;
+    }
+    /* header utama */
+    .hedtop{
+        justify-content: end;
+    }
+    .hamburger {
+        display: none;
+    }
+    .logo{
+        height: 50px;
+        width: 130px;
+    }
+    /* konten */
+    .konten{
+        padding-top: 30px;
+        background-color: #f1f1f1;
+    }
+    .kontenjudul{
+        text-align: center;
+    }
+    .kontenblok{
+        display: flex;
+        padding-left: 50px;
+        padding-top: 25px;
+        gap: 50px;
+    }
+    .kontenteks{
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 20px;
+    }
+    .kontengambar{
+        width: 300px;
+    }
+    /* event */
+    .beritajudul{
+        padding-left: 50px;
+    }
+    .kegiatan{
+        display: flex;
+        flex-wrap: wrap;
+        padding-left: 50px;
+        justify-items: center;
+        padding-top: 25px;
+        gap: 150px;
+    }
+    .Event{
+        width: 270px;
+    }
+    .gambarko{
+        width: 250px;
+    }
+    .eventteks{
+        width: 250px;
+    }
+
+    /* Kemitraan */
+    .kemitraan{
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 25px;
+    }
+    .mitra{
+        display: grid;        
+        grid-template-columns: repeat(4,1fr);
+        width: 100vw;
+        justify-content: center;
+    }
+
+    .mitra .col {
+        margin: auto;
+    }
+
+    .row1{
+        gap: 100px;
+    }
+    /* footer */
+    .bgfooter{
+        background-color: #f1f1f1;
+        padding-left: 50px;
+        margin-top: 50px;
+        
+    }
+    .footer{
+        display: flex;
+        justify-content: center;
+        gap: 80px;
+        padding-right: 20px;
+        min-width: 721px;
+    }
+    .Gedung{
+        display: flex;
+        gap: 20px;
+    }
+    .Gedung img{
+        width: 60px;
+        height: 80px;
+    }
+    .alamat{
+        width: 250px;
+    }
+    .bukanheading{
+        color: grey;
+        padding-top: 80px;
+    }
+    .scroll{
+        display: none;
+    }
+
+    /* GALERI-FOTO */
+    .konteur{
+        display: flex;
+        justify-content:center;    
+    }
+    .bargaleri{
+        padding-top: 50px;
+        padding-right: 20px;
+    }
+    .fotok{
+        width: 300px;
+        padding: 20px;
+    }
+
+    /* berita&informasi */
+    .totberita{
+        padding: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    .infoterkini{
+        padding: 20px;
+        width: 110%;
+        border: 5px solid rgba(59, 55, 55, 0.295);
+    }
+    .berkeg{
+        padding: 10px;
+        width: 80%;
+        border: 2px solid rgba(59, 55, 55, 0.295);
+    }
+    .eventni{
+        gap: 5px;
+        padding: 20px 10px 10px 10px;
+        display: flex;
+        justify-content: center;
+    }
+    .infojudul{
+        font-weight: bold;
+        font-size: 24px;
+        text-decoration: underline;
+    }
+    .judul{
+        font-weight: 500;
+        font-size: medium;
+    }
+}
