@@ -14,7 +14,7 @@ window.addEventListener("load", () => {
 
     console.log(window.location.href)
 
-    if(window.location.href === "http://127.0.0.1:5501/" || window.location.href === "https://informatikaunri21arza.site/"){
+    if(window.location.href === "http://127.0.0.1:5501/" || window.location.href.includes("http://127.0.0.1:5501/index.html") || window.location.href === "https://informatikaunri21arza.site/"){
         const visiIsi = document.querySelector(".isi.visi");
         const misiIsi = document.querySelector(".isi.misi");
         const tujuanIsi = document.querySelector(".isi.tujuan");
@@ -24,23 +24,32 @@ window.addEventListener("load", () => {
         const tujuanBtn = document.querySelector(".btn.tujuan");
 
         function handleVisiMisiTujuan() {
-            misiIsi.classList.add("hidden");
+            visiIsi.classList.add("hidden");
             tujuanIsi.classList.add("hidden");
     
             visiBtn.addEventListener("click", () => {
                 visiIsi.classList.remove("hidden");
+                visiBtn.classList.add("active");
+                misiBtn.classList.remove("active");
+                tujuanBtn.classList.remove("active");
                 misiIsi.classList.add("hidden");
                 tujuanIsi.classList.add("hidden");
             });
     
             misiBtn.addEventListener("click", () => {
                 misiIsi.classList.remove("hidden");
+                misiBtn.classList.add("active");
+                visiBtn.classList.remove("active");
+                tujuanBtn.classList.remove("active");
                 visiIsi.classList.add("hidden");
                 tujuanIsi.classList.add("hidden");
             });
     
             tujuanBtn.addEventListener("click", () => {
                 tujuanIsi.classList.remove("hidden");
+                tujuanBtn.classList.add("active");
+                visiBtn.classList.remove("active");
+                misiBtn.classList.remove("active");
                 misiIsi.classList.add("hidden");
                 visiIsi.classList.add("hidden");
             });

@@ -152,14 +152,14 @@ main.home {
 
 .btn-container .btn {
     padding: 10px 20px;
-    background-color: orange;
     border-radius: 0;
     cursor: pointer;
-}
-
-.btn-container .btn.misi {
     background-color: var(--dark-blue);
     color: #ffffff;
+}
+
+.btn-container .btn.active {
+    background-color: orange;
 }
 
 .content-container {
@@ -214,6 +214,15 @@ h2.section-title::after {
     height: 3px;
     top: 23px;
     background-color: orange;
+}
+
+h2.section-title.berita-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    top: 23px;
+    background-color: rgb(119, 119, 119);
 }
 
 .berita-container, .event-container {
@@ -366,6 +375,10 @@ a.read-more::after {
 
     main.home {
         margin-top: 55px;
+    }
+
+    .content {
+        grid-template-columns: repeat(1, 1fr);
     }
 
     .hightlight-news .ket {
